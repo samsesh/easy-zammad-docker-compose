@@ -9,9 +9,10 @@ services:
      restart: always
      ports:
       - 8080:80
-    volumes:
+     volumes:
       - zammad-data:/opt/zammad:rw
       - zammad-db:/var/lib/postgresql:rw
+      
 volumes:
   zammad-data:
     driver: local
