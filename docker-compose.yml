@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+    zammad:
+     image: zammad/zammad
+     hostname: zammadhost
+     container_name: zammad
+     restart: always
+     ports:
+      - 8080:80
+     
